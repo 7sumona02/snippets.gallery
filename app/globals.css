@@ -24,3 +24,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: 'Instrument';
+  src: url('/fonts/InstrumentSerif.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InstrumentItalic';
+  src: url('/fonts/InstrumentItalic.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.image-reveal {
+  clip-path: inset(0 100% 0 0);
+  animation: reveal 1s forwards cubic-bezier(0.77, 0, 0.175, 1);
+}
+ 
+ 
+@keyframes reveal {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
